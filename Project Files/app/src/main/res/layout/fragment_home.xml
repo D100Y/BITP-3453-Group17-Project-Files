@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5EFFF"
+    tools:context=".HomeFragment">
+
+    <!-- Fancy Title with Stylish Font -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/calistoga"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:padding="12dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="6"
+        android:text="MALAYSIA CENTER DONATION"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" /> <!-- Custom font -->
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/searchview_background"
+        android:iconifiedByDefault="false"
+        android:padding="12dp"
+        android:queryHint="Search for disasters"
+        android:textColorHint="@android:color/darker_gray"
+        app:queryBackground="@android:color/transparent" />
+
+
+
+    <!-- Post List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/postList"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginTop="-7dp"
+        android:layout_marginBottom="13dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

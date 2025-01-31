@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Project1" parent="Theme.AppCompat.Light" >
+    <!-- Remove Action Bar (Title Bar) -->
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+
+    </style>
+</resources>

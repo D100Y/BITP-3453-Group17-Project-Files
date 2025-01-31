@@ -1,0 +1,113 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:backgroundTint="@android:color/white"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Organization Name and Type -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <!-- Organization Name -->
+            <TextView
+                android:id="@+id/organizationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Malaysian Relief Agency (MRA)"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Organization Type -->
+            <TextView
+                android:id="@+id/eventType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organization"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <!-- ProgressBar on the same line as Organization Name -->
+        <ProgressBar
+            android:id="@+id/statusProgressBar"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="37dp"
+            android:layout_height="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:indeterminate="true"
+            android:visibility="visible" />
+
+        <!-- Event Image below Organization Name and ProgressBar -->
+
+        <!-- Event Title -->
+
+        <ImageView
+            android:id="@+id/eventImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/organizationName"
+            android:layout_marginTop="58dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventImage"
+            android:layout_marginTop="8dp"
+            android:text="Flood at Bukit Beruang, Melaka"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Event Date -->
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventTitle"
+            android:layout_marginTop="4dp"
+            android:text="30 November 2017"
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/eventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventDate"
+            android:layout_marginTop="8dp"
+            android:text="Situasi terkini di Taman Melawis, Bukit Beruang yang dilanda banjir kilat ekoran hujan yang tidak berhenti-henti sejak awal pagi tadi."
+            android:textColor="#444444" />
+
+        <!-- Details Button -->
+        <Button
+            android:id="@+id/detailsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventDescription"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_purple"
+            android:text="Details"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

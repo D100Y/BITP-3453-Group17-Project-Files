@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Modern Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_back_arrow"
+        android:tint="@color/black"
+        android:contentDescription="Back Button"
+        android:layout_gravity="start" />
+
+    <!-- Organization Logo -->
+    <ImageView
+        android:id="@+id/detailsOrganizationIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:contentDescription="Organization Icon" />
+
+    <!-- Organization Name -->
+    <TextView
+        android:id="@+id/detailsOrganizationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Organization Description -->
+    <TextView
+        android:id="@+id/detailsOrganizationDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:gravity="center" />
+
+    <!-- Involvement Areas Title -->
+    <TextView
+        android:id="@+id/detailsInvolvementAreasTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:gravity="start" />
+
+    <!-- Involvement Areas List -->
+    <TextView
+        android:id="@+id/detailsInvolvementAreas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:gravity="start" />
+
+
+</LinearLayout>

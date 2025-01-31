@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5EFFF"
+    tools:context=".OrganizationFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/filterBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@android:color/holo_blue_dark"
+        app:tabSelectedTextColor="@android:color/holo_blue_dark"
+        app:tabTextColor="@android:color/darker_gray">
+
+        <!-- TabItem for Flood -->
+
+        <!-- TabItem for All -->
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabFlood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flood" />
+
+        <!-- TabItem for Fire -->
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabFire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fire" />
+
+        <!-- TabItem for Haze -->
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabHaze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Haze" />
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <!-- Organization List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/organizationList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<!-- res/drawable/circle_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Circle background (fixed size) -->
+    <item
+        android:right="15dp"
+        android:left="15dp"
+        android:top="3dp"
+        android:bottom="3dp"
+        >
+        <shape>
+            <solid android:color="@color/colorSelected" /> <!-- Selected state color -->
+            <corners android:radius="80dp" /> <!-- Circle with fixed size (adjust to your liking) -->
+        </shape>
+    </item>
+</layer-list>

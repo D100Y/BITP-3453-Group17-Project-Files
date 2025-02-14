@@ -1,24 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5EFFF"
     android:padding="24dp">
 
-    <!-- Main content centered in the FrameLayout -->
-    <FrameLayout
-        android:id="@+id/mainContent"
-        android:layout_width="0dp"
-
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
+    <!-- Help Center Container -->
+    <LinearLayout
+        android:id="@+id/HelpCenterSection"
+        android:layout_width="360dp"
+        android:layout_height="704dp"
+        android:layout_marginTop="4dp"
+        android:background="#E5D9F2"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
+        <!-- The title for the page -->
+        <TextView
+            android:id="@+id/HelpCenterTitle"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Help Center"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="22sp" />
+
+        <!-- The edit text for input prompting user. -->
+
+        <!-- A submit button for the feedback input -->
+
+        <EditText
+            android:id="@+id/editTextFeedback"
+            android:layout_width="335dp"
+            android:layout_height="202dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:gravity="top|start"
+            android:hint="Enter your feedback here..."
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/buttonSubmitFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Submit" />
+
+        <!-- Gives message upon inputting feedback -->
+        <TextView
+            android:id="@+id/textViewConfirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Thank you for your feedback!"
+            android:textColor="@android:color/holo_green_dark"
+            android:visibility="gone" />
 
 
-    </FrameLayout>
+        <!-- Display Feedback -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFeedback"
+            android:layout_width="337dp"
+            android:layout_height="362dp"
+            android:layout_marginTop="16dp"
+            android:background="#F3E5F5"
+            android:scrollbars="vertical" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

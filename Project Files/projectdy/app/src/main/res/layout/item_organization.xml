@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:background="#E5D4FF">
+
+    <!-- Profile Icon -->
+    <ImageView
+        android:id="@+id/organizationIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/group"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="Organization Icon" />
+
+    <!-- Organization Details -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/organizationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Organization Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/organizationDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brief description about the organization."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/total_doanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!-- Details Button -->
+    <Button
+        android:id="@+id/viewDetailsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donate"
+        android:backgroundTint="@android:color/holo_purple"
+        android:textColor="@android:color/white" />
+
+    <!-- Details Button -->
+    <Button
+        android:id="@+id/DetailsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:backgroundTint="@android:color/holo_purple"
+        android:textColor="@android:color/white" />
+</LinearLayout>
+
+</LinearLayout>

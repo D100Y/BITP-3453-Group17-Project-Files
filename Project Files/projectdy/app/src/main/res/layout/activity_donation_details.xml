@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Back Button and Donation Details Name -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/purple_200"> <!-- Use your desired light purple color -->
+
+        <!-- Content Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Modern Back Button -->
+            <ImageButton
+                android:id="@+id/detailsBackButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back Button"
+                android:src="@drawable/ic_back_arrow"
+                app:tint="@color/white" />
+
+            <!-- Donation Name -->
+            <TextView
+                android:id="@+id/donationDetailsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="335dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/donationDetailsIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Organization Icon"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <!-- Donation Details Text -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:layout_marginTop="35dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Posted Date -->
+            <TextView
+                android:id="@+id/Posted_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Posted Date"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Donation Details Text -->
+            <TextView
+                android:id="@+id/donationDetailsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="#312F2F"
+                android:text="Donation Details"
+                android:justificationMode="inter_word"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Necessary Materials -->
+            <TextView
+                android:id="@+id/Necessary_Materials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#312F2F"
+                android:text="Necessary Materials"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Contact Info -->
+            <TextView
+                android:id="@+id/Contact_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#312F2F"
+                android:text="Contact Information"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/donateBtn"
+        android:layout_marginTop="25dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Donate"
+        android:background="@drawable/button_rounded"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
